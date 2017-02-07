@@ -122,6 +122,25 @@ a:hover {
   left: 546px;
 }
 
+.off-button {
+  cursor: pointer;
+  position: absolute;
+  width: 68px;
+  height: 71px;
+  background-color: cyan;
+  opacity: 0;
+  top: 125px;
+  left: 552px;
+}
+
+.off-button:link, .off-button:active, .off-button:visited {
+  color: transparent;
+}
+
+.off-button:hover {
+  opacity: 0;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

@@ -1,12 +1,16 @@
 (function (win, doc) {
-  var overlay  = document.querySelector('.overlay'),
-      sound    = document.querySelector('audio'),
-      onButton = document.querySelector('.on-button');
+  var $         = doc.querySelector.bind(doc),
+      overlay   = $('.overlay'),
+      sound     = $('audio'),
+      onButton  = $('.on-button'),
+      offButton = $('.off-button');
 
   function toggleOverlay (event) {
-    overlay.classList.add('hidden');
+    (overlay.classList.contains('hidden')) ? overlay.classList.remove('hidden') : overlay.classList.add('hidden');
+
     sound.play();
   }
 
   onButton.addEventListener('click', toggleOverlay);
+  offButton.addEventListener('click', toggleOverlay);
 })(window, document);
