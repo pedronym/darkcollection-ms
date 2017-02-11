@@ -7,7 +7,6 @@
 
   function toggleOverlay (event) {
     (overlay.classList.contains('hidden')) ? overlay.classList.remove('hidden') : overlay.classList.add('hidden');
-
     sound.play();
   }
 
